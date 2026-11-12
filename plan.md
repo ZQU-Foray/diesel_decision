@@ -2,7 +2,7 @@
 
 ## 任务列表
 
-- [ ] 定义 `WorldSnapshot` / `ActionMask` / `Decision`（对齐 `foray_interfaces`）
+- [ ] 定义 `WorldSnapshot` / `ActionMask` / `Decision`（对齐 `diesel_interfaces`）
 - [ ] 实现 L5-b 技能层与 mask 计算函数（含 3v3 哨兵 4–5 态技能）
 - [ ] 实现规则决策器（效用打分），跑通统一签名
 - [ ] 实现 L5-c 安全门（指令仲裁 + 开火授权 + IFF）

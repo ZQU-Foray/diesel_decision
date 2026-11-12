@@ -1,4 +1,4 @@
-# foray_decision
+# diesel_decision
 
 > **L5** · owner 角色：决策
 
@@ -13,9 +13,9 @@ L5 三层决策 + L2 横向协同端口 + X5 分布式协同
 > 本仓处于**初始化状态**，尚无源码。以下流程随 P0/P1 落地逐步可用。
 
 ```bash
-# 1. 拉取（仓齐备后改为从元仓 foray_ws 一键拉取）
-git clone git@github.com:ZQU-Foray/foray_decision.git
-cd foray_decision
+# 1. 拉取（仓齐备后改为从元仓 diesel_ws 一键拉取）
+git clone git@github.com:ZQU-Foray/diesel_decision.git
+cd diesel_decision
 
 # 2. 依赖安装
 rosdep install -y -r --from-paths . --ignore-src --rosdistro humble
@@ -96,7 +96,7 @@ Decision decide(const WorldSnapshot & world, const ActionMask & mask);
 
 
 
-轻量对局仿真（**无物理引擎**的区域级随机博弈）起步期放本仓，成熟后拆出 `foray_battle_sim`。
+轻量对局仿真（**无物理引擎**的区域级随机博弈）起步期放本仓，成熟后拆出 `diesel_battle_sim`。
 
 硬性要求：输出的 `WorldSnapshot` schema 与实车**完全一致**；单局耗时 << 1 s；同种子可复现。
 
@@ -104,8 +104,8 @@ Decision decide(const WorldSnapshot & world, const ActionMask & mask);
 
 | 方向 | 对象 |
 |---|---|
-| **上游**（本仓依赖谁） | `foray_interfaces` · `foray_platform` · `foray_vision` |
-| **下游**（谁依赖本仓） | `foray_robots` · `foray_ws` |
+| **上游**（本仓依赖谁） | `diesel_interfaces` · `diesel_platform` · `diesel_vision` |
+| **下游**（谁依赖本仓） | `diesel_robots` · `diesel_ws` |
 
 ## 参考
 
